@@ -4,7 +4,7 @@ import { IconContext } from "react-icons";
 import { AiFillPlayCircle } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
 
-export default function Library(props) {
+export default function Library() {
   const [playlists, setPlaylists] = useState(null);
 
   useEffect(() => {

@@ -9,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: black;
+  background: #282828;
   font-family: 'Montserrat', -apple-system, system-ui, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 20px;
@@ -249,14 +249,86 @@ section {
   text-align: center;
   margin: 15px;
   justify-content: space-between;
+  grid-template-columns: 100px 1fr 1fr 200px;
+  gap:10px;
+  align-items: stretch;
+	align-items: center;
+}
+.print_line_tracklist_add {
+  display: grid;
+  flex-direction:row;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 15px;
+  justify-content: space-between;
   grid-template-columns: 100px 1fr 1fr 200px 90px;
   gap:10px;
   align-items: stretch;
 	align-items: center;
 }
+
+.print_line_artistlist{
+  display: grid;
+  flex-direction:row;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+	align-items: center;
+}
+.print_line_playlist {
+  display: grid;
+  flex-direction:row;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:20px;
+	align-items: center;
+}
+.print_line_playlist:hover {
+  background-color: grey;
+}
+
+.print_line_albumlist{
+  display: grid;
+  flex-direction:row;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:20px;
+	align-items: center;
+}
+.print_line_playlist{
+  display: grid;
+  flex-direction:row;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 15px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap:20px;
+	align-items: center;
+}
+.print_line_albumlist:hover{
+    background-color: grey;  
+}
+.print_line_artistlist:hover {
+  background-color: grey;
+}
 .print_line_tracklist:hover {
   background-color: grey;
 }
+.print_line_playlist:hover {
+  background-color: grey;
+}
+
 
 .song_name {
   -webkit-line-clamp: 1;
@@ -322,13 +394,16 @@ section {
 }
 
 .sidebar-container {
-  width: 70px;
+  width: 90px;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  text-align: center;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .profile-img {

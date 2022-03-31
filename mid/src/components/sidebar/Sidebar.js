@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import SidebarButton from './SidebarButton'
-import { MdFavorite } from "react-icons/md";
 import { FaGripfire, FaPlay } from "react-icons/fa";
 import { FaSignOutAlt } from "react-icons/fa";
 import { IoLibrary } from "react-icons/io5";
